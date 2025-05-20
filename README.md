@@ -12,6 +12,9 @@ Visualization: Plotted actual vs predicted CO concentrations.
 💡 Suggestions
 Include weather or other pollutant variables to enrich features.
 Incorporate real-time data and hyperparameter tuning to improve accuracy.
+
+
+--------------------------------------------------------------------------------------------------------
 📁 Project 2: Wind Turbine Performance Analysis and Prediction
 
 🎯 Project Aim
@@ -27,8 +30,10 @@ Tuning & Interpretation: Optimized Random Forest using grid search and analyzed 
 Random Forest and Gradient Boosting performed best but need further optimization.
 Adding turbine maintenance history and environmental data could enhance predictions.
 Real-time prediction and cloud deployment would increase practical utility.
-📁 Project 3: Hyperspectral Image Denoising and Analysis (Indian Pines Dataset)
 
+
+--------------------------------------------------------------------------------------------
+📁 Project 3: Hyperspectral Image Denoising and Analysis (Indian Pines Dataset)
 🎯 Project Aim
 Process and denoise hyperspectral image data using PCA, Total Variation, and deep learning methods to improve data quality for analysis and classification.
 
