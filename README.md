@@ -1,29 +1,44 @@
-1. Carbon Monoxide (CO) Prediction Using Air Quality Data
-Project Aim:
-The goal was to predict carbon monoxide (CO) levels in the air using the historical data from the Air Quality UCI dataset. By applying time-series analysis and machine learning techniques, this project aimed to forecast CO concentrations and provide insights for environmental health monitoring.
-What Was Done:
-Data Preprocessing: Cleaned dataset by handling invalid entries, formatted time columns, and filled missing data using forward filling.
-Feature Engineering: Created time-based features (e.g., Hour, DayOfWeek, Month) to capture seasonal patterns influencing CO levels.
-Model Development: Used an XGBRegressor to predict CO levels, after scaling the data using StandardScaler.
-Prediction & Evaluation: The model was evaluated using Mean Squared Error (MSE) and used to forecast CO levels for the next 24 hours.
-Visualization: Generated plots comparing historical CO levels with forecasted values.
-Comments and Suggestions:
-Data quality significantly impacts prediction accuracy.
-Further feature engineering could incorporate weather data.
-Hyperparameter tuning and real-time data integration can enhance model performance.
+📁 Project 1: Carbon Monoxide (CO) Prediction Using Air Quality Data
+🎯 Project Aim:
+To predict CO levels using the UCI Air Quality dataset, applying time-series and machine learning techniques for environmental health forecasting.
 
-2. Wind Turbine Performance Analysis and Prediction
-Project Aim:
-The objective was to predict the operational status of wind turbines by comparing their measured power output with the theoretical power curve. The project aimed to identify underperformance or inefficiencies in turbines, helping with optimization and maintenance.
-What Was Done:
-Data Preparation: Cleaned and preprocessed the dataset, handling missing values, outliers, and ensuring correct column formats.
-Feature Engineering: Created lag features to capture temporal dependencies, such as Wind_Lag1 and Wind_Lag7.
-Model Building: Implemented multiple machine learning models (Logistic Regression, Random Forest, Gradient Boosting, SVM, KNN) for classifying turbine operational status.
-Model Evaluation: Evaluated the models using accuracy, precision, recall, F1 score, and confusion matrices.
-Hyperparameter Tuning: Optimized the Random Forest model using grid search.
-Feature Importance: Assessed which features were most influential using Random Forest and Gradient Boosting.
-Comments and Suggestions:
-Random Forest and Gradient Boosting models performed best, but further optimization is needed.
-Additional features, such as turbine maintenance history and environmental factors, could improve the model.
-Real-time prediction and cloud deployment for turbine monitoring would enhance the project’s impact.
- 
+✅ What Was Done:
+
+Data Preprocessing: Handled missing/invalid values, formatted timestamps, and filled gaps using forward fill.
+Feature Engineering: Generated time-based features (Hour, DayOfWeek, Month) to capture seasonal trends.
+Modeling: Trained an XGBRegressor after applying StandardScaler.
+Evaluation: Used Mean Squared Error (MSE) to assess model performance; forecasted CO levels for the next 24 hours.
+Visualization: Plotted actual vs predicted CO concentrations.
+💡 Suggestions:
+
+Include weather or pollutant variables to improve feature richness.
+Integrate real-time data and apply hyperparameter tuning for better accuracy.
+📁 Project 2: Wind Turbine Performance Analysis and Prediction
+🎯 Project Aim:
+To classify wind turbine operational status by comparing measured and theoretical power outputs—identifying underperformance for optimization and maintenance.
+
+✅ What Was Done:
+
+Data Cleaning: Removed anomalies, filled missing values, and ensured consistent formatting.
+Feature Engineering: Created lag features (Wind_Lag1, Wind_Lag7) to capture temporal patterns.
+Modeling: Used multiple classifiers: Logistic Regression, Random Forest, Gradient Boosting, SVM, and KNN.
+Evaluation: Compared models using accuracy, precision, recall, F1-score, and confusion matrices.
+Tuning & Interpretation: Applied grid search for optimal parameters; analyzed feature importance.
+💡 Suggestions:
+
+Random Forest and Gradient Boosting yielded the best results.
+Adding environmental data or turbine history could boost predictive power.
+Deployment for real-time turbine monitoring is a promising next step.
+📁 Project 3: Hyperspectral Image Denoising and Analysis (Indian Pines Dataset)
+🎯 Project Aim:
+To process and denoise hyperspectral image data using PCA, Total Variation (TV), and deep learning techniques, enhancing data quality for classification or further analysis.
+
+✅ What Was Done:
+
+Data Loading & Visualization: Loaded Indian Pines dataset; visualized individual bands and RGB composites.
+Preprocessing: Flattened the 3D hyperspectral cube and filtered out unlabeled pixels for focused analysis.
+Denoising with PCA: Applied Principal Component Analysis to reduce noise and dimensionality.
+Autoencoder (PyTorch): Built and trained a denoising autoencoder on synthetic noisy spectral data.
+TV Denoising: Applied Total Variation filtering to a noisy band using skimage.
+💡 Suggestions:
+
